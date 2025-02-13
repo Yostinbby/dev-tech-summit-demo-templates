@@ -23,7 +23,7 @@
 <body>
   <calcite-shell content-behind>
     <calcite-navigation navigation-action slot="header" id="nav">
-      <calcite-navigation-logo href="" icon="image-layer" alt="Application logo" slot="logo"
+      <calcite-navigation-logo href="#" icon="image-layer" alt="Application logo" slot="logo"
         heading="My demo application" description="Esri Developer & Technology Summit"></calcite-navigation-logo>
       <calcite-action-pad layout="horizontal" expand-disabled slot="content-end">
         <calcite-action id="toggle-mode" text="Toggle mode" icon="brightness"></calcite-action>
@@ -54,8 +54,8 @@
           <calcite-label>
             Effect type
             <calcite-segmented-control width="full">
-              <calcite-segmented-control-item value="Blur"></calcite-segmented-control-item>
-              <calcite-segmented-control-item checked value="Highlight"></calcite-segmented-control-item>
+              <calcite-segmented-control-item value="Blur">Blur</calcite-segmented-control-item>
+              <calcite-segmented-control-item checked value="Highlight">Highlight</calcite-segmented-control-item>
             </calcite-segmented-control>
           </calcite-label>
 
@@ -92,34 +92,33 @@
     <div slot="message">Welcome to beautiful Palm Springs!</div>
   </calcite-alert>
 
-  <calcite-modal id="modal">
-    <div slot="header">About this application</div>
-    <div slot="content">
+  <calcite-dialog modal id="modal" heading="About this application">
+    <div>
       <calcite-notice open>
         <span slot="title">This demonstration application is a companion resource to the "My demo application" session
           at Esri Developer & Technology Summit.
         </span>
       </calcite-notice>
       This example illustrates
-      <calcite-link target="_blank" href=""> a great topic</calcite-link>.
+      <calcite-link target="_blank" href="#"> a great topic</calcite-link>.
       <ul>
         <li>Main point 1.</li>
         <li>Main point 2.</li>
         <li>Main point 3.</li>
       </ul>
-      <calcite-link target="_blank" href="">Learn more</calcite-link> in the
-      <calcite-link target="_blank" href=""> documentation</calcite-link>.
+      <calcite-link target="_blank" href="#">Learn more</calcite-link> in the
+      <calcite-link target="_blank" href="#"> documentation</calcite-link>.
       <hr />
-      <calcite-link target="_blank" href="">Application source code</calcite-link>
+      <calcite-link target="_blank" href="#">Application source code</calcite-link>
       is available in the
       <calcite-link target="_blank" href="https://github.com/EsriDevEvents/">Esri Developer Events GitHub
         organization</calcite-link>.
       <hr />
-      <calcite-link target="_blank" href="">Map data </calcite-link> is sourced from Esri Data and Maps /
+      <calcite-link target="_blank" href="#">Map data </calcite-link> is sourced from Esri Data and Maps /
       <calcite-link target="_blank" href="https://livingatlas.arcgis.com/en/home/">ArcGIS Living Atlas of the
         World</calcite-link>.
     </div>
-  </calcite-modal>
+  </calcite-dialog>
 
   <calcite-sheet id="sheet" display-mode="float" width-scale="m">
     <calcite-panel heading="Esri Developer & Technology Summit" description="Helpful conference links" closable
