@@ -46,7 +46,7 @@
           <calcite-action id="fav" icon="heart"></calcite-action>
           <calcite-tooltip placement="bottom" reference-element="fav">Save this map to your favorites</calcite-tooltip>
           <calcite-action id="discussions" icon="speech-bubble">
-            <calcite-chip style="margin-inline-start: 1rem" kind="brand" scale="s">21<span>
+            <calcite-chip style="margin-inline-start: 1rem" kind="brand" scale="s" label="21 comments">21<span>
                 comments</span></calcite-chip>
             <calcite-tooltip placement="bottom" reference-element="discussions">Join the conversation</calcite-tooltip>
           </calcite-action>
@@ -56,7 +56,7 @@
 
       <calcite-panel class="grid-panel" heading="Map details">
         <calcite-chip style="align-self: center; margin: 0 0.5rem 0 auto" icon="ribbon-rosette"
-          slot="header-actions-end" kind="brand" scale="s">Awarded</calcite-chip>
+          slot="header-actions-end" kind="brand" scale="s" label="Awarded">Award ribbon</calcite-chip>
 
         <calcite-block heading="San Rafael Valley, California, USA" description="Area of interest" open
           style="--calcite-block-padding: 0">
@@ -67,31 +67,31 @@
         <calcite-block heading="Information" open collapsible>
           <calcite-label>
             Categories
-            <calcite-chip-group>
-              <calcite-chip>Equity</calcite-chip>
-              <calcite-chip>Agriculture</calcite-chip>
+            <calcite-chip-group label="Category types">
+              <calcite-chip label="equity">Equity</calcite-chip>
+              <calcite-chip label="agriculture">Agriculture</calcite-chip>
             </calcite-chip-group>
           </calcite-label>
 
           <calcite-label>
             Authors
-            <calcite-chip-group>
-              <calcite-chip>
+            <calcite-chip-group label="Authors">
+              <calcite-chip label="Peter Berg">
                 <calcite-avatar thumbnail="./images/avatar-berg.jpg" username="Peter Berg"
                   slot="image"></calcite-avatar>
                 Peter Berg
               </calcite-chip>
-              <calcite-chip>
+              <calcite-chip label="Edward Abbey">
                 <calcite-avatar thumbnail="./images/avatar-abbey.jpg" username="Edward Abbey"
                   slot="image"></calcite-avatar>
                 Edward Abbey
               </calcite-chip>
-              <calcite-chip>
+              <calcite-chip label="Wendell Berry">
                 <calcite-avatar thumbnail="./images/avatar-steel.jpg" username="Wendell Berry"
                   slot="image"></calcite-avatar>
                 Carolyn Steel
               </calcite-chip>
-              <calcite-chip>
+              <calcite-chip label="Wendell Berry">
                 <calcite-avatar thumbnail="./images/avatar-berry.jpg" username="Wendell Berry"
                   slot="image"></calcite-avatar>
                 Wendell Berry
