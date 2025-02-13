@@ -12,7 +12,7 @@ calcite-shell {
 }
 
 calcite-navigation-logo {
-  --calcite-ui-icon-color: var(--calcite-color-text-1);
+  --calcite-navigation-logo-heading-color: var(--calcite-color-text-1);
 }
 
 calcite-navigation {

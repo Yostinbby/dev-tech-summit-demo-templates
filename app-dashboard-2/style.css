@@ -66,11 +66,11 @@ arcgis-map {
 }
 
 calcite-menu-item {
-  --calcite-color-foreground-1: var(--calcite-color-background);
+  --calcite-menu-background-color: var(--calcite-color-background);
 }
 
 calcite-navigation-logo {
-  --calcite-ui-icon-color: var(--calcite-color-brand);
+  --calcite-navigation-logo-heading-color: var(--calcite-color-brand);
 }
 
 calcite-panel {
