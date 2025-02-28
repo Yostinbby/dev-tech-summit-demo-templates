@@ -2,12 +2,9 @@
 /* Demo template supporting styles */
 
 html,
-body,
-arcgis-map {
-  padding: 0;
+body {
   margin: 0;
   height: 100%;
-  width: 100%;
 }
 
 calcite-navigation-logo {
