@@ -15,7 +15,9 @@ let mode = "light";
 
 toggleModeEl.addEventListener("click", () => handleModeChange());
 toggleModalEl.addEventListener("click", () => handleModalChange());
-navigationEl.addEventListener("calciteNavigationActionSelect", () => handleSheetOpen());
+navigationEl.addEventListener("calciteNavigationActionSelect", () =>
+  handleSheetOpen()
+);
 
 panelEl.addEventListener("calcitePanelClose", () => handlePanelClose());
 
@@ -24,13 +26,17 @@ function handleModeChange() {
   const isDarkMode = mode === "dark";
   darkModeCss.disabled = !darkModeCss.disabled;
   lightModeCss.disabled = !lightModeCss.disabled;
-  arcgisMap.itemId = isDarkMode ? "d5dda743788a4b0688fe48f43ae7beb9" : "05e015c5f0314db9a487a9b46cb37eca";
+  arcgisMap.itemId = isDarkMode
+    ? "d5dda743788a4b0688fe48f43ae7beb9"
+    : "05e015c5f0314db9a487a9b46cb37eca";
   toggleModeEl.icon = isDarkMode ? "moon" : "brightness";
-  document.body.className = isDarkMode ? "calcite-mode-dark" : undefined;
+  document.body.classList.toggle("calcite-mode-dark", isDarkMode);
 
   // maps sdk workaround
   const inverseMode = mode === "light" ? "dark" : "light";
-  const elements = document.getElementsByClassName(`calcite-mode-${inverseMode}`);
+  const elements = document.getElementsByClassName(
+    `calcite-mode-${inverseMode}`
+  );
   for (let i = 0; i < elements.length; i++) {
     const node = elements[i];
     node.classList.remove(`calcite-mode-${inverseMode}`);
